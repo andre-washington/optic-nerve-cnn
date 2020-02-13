@@ -45,6 +45,7 @@ def extract_DRIONS_DB(db_folder, expert=1):
                      coords)
         coords = np.array(coords)
         segm_img = np.zeros(orig_resolution, dtype=np.uint8)
+        coords
         cv2.fillPoly(segm_img, coords.reshape((1,) + coords.shape), color=1)
         Y.append(segm_img)
 
